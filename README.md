@@ -1,6 +1,4 @@
-not tested!
-make sure to have git installed
-to run
+BROKEN
 
 
 
