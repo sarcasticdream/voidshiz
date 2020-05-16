@@ -18,8 +18,8 @@ cd ~/st
 sudo make clean install
 cd ~/dmenu
 sudo make clean install
-cd ~/
-touch .xinitrc
+cd ~/voidshiz
+mv .xinitrc ~/
 echo """
 In your xinitrc please change the resolution to one your are comfortable with
 exec dwm
