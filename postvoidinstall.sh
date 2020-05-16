@@ -1,3 +1,4 @@
+cd ~/
 echo"""Basically this will setup xorg and dwm with some other useful things you might need for your journey"""
 echo"""Updating System"""
 sudo xbps-install -Su
@@ -19,13 +20,6 @@ cd ~/dmenu
 sudo make clean install
 touch .xinitrc
 echo """
-Put this in your .xinitrc file I suck at scripting!
-
-while true; do
-    xsetroot -name "$(date)"
-    sleep 2
-done &
-nitrogen --restore &
-xrandr -s 1920x1080 &     #Please change this resolution to the current one you have this is just generic
+In your xinitrc please change the resolution to one your are comfortable with
 exec dwm
 """
