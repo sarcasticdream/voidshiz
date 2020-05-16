@@ -12,8 +12,8 @@ git clone https://git.suckless.org/dmenu
 git clone https://sarcasticdream/voidshiz
 echo"""Compiling the shiz"""
 cd ~/dwm
-sudo sed -i 's/X11INC = usr/X11R6/include/X11INC = usr/include/X11/g' config.mk
-sudo sed -i 's/X11LIB = usr/X11R6/lib/X11LIB = usr/lib/X11/g' config.mk
+sudo sed -i 's@X11INC = usr/X11R6/include@X11INC = usr/include/X11@g' config.mk
+sudo sed -i 's@X11LIB = usr/X11R6/lib@X11LIB = usr/lib/X11@g' config.mk
 cd ~/st
 sudo make clean install
 cd ~/dmenu
